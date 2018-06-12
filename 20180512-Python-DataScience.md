@@ -7,5 +7,6 @@
 #### Picking a column argument dataframe 
 * mDataTime0400_pd = hourlyFullUsdChf_pd [(hourlyFullUsdChf_pd['Time'] == '04:00')]
 
-#### Numpy sum
+#### Numpy count results
 * (BuyPosSubResult_np == 'Success').sum()
+
