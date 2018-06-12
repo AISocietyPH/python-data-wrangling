@@ -3,3 +3,9 @@
 
 #### Renaming panda dataframe columns
 * dailyFullUsdChfD1_pd.columns = ['0', '0','DHigh','DLow','0', '0']
+
+#### Picking a column argument dataframe 
+* mDataTime0400_pd = hourlyFullUsdChf_pd [(hourlyFullUsdChf_pd['Time'] == '04:00')]
+
+#### Numpy sum
+* (BuyPosSubResult_np == 'Success').sum()
