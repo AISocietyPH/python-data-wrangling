@@ -10,3 +10,5 @@
 #### Numpy count results
 * (BuyPosSubResult_np == 'Success').sum()
 
+#### Python 3 length count
+* countResultForSell = len(SellPosSubResult_np)
