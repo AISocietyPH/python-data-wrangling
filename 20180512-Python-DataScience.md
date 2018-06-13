@@ -1,3 +1,5 @@
+Git location: https://gitlab.com/TheInceptors/finmark/CodeLibrary.git
+
 #### Import csv as panda dataframe
 * dailyFullUsdChfD1_pd = pd.read_csv('datasets/2018-05-02-UsdChfD1.csv')
 
@@ -12,3 +14,7 @@
 
 #### Python 3 length count
 * countResultForSell = len(SellPosSubResult_np)
+
+#### Drop NaN
+* df.dropna()
+* https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.dropna.html
