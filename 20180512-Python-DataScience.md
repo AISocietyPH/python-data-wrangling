@@ -18,3 +18,6 @@ Git location: https://gitlab.com/TheInceptors/finmark/CodeLibrary.git
 #### Drop NaN
 * df.dropna()
 * https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.dropna.html
+
+#### Slicing columns 
+* H1_UsdChf_Reshaped01_pd = H1_UsdChf_pd.drop(H1_UsdChf_pd.columns[[0, -1]], axis=1)
