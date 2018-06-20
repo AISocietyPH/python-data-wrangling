@@ -21,3 +21,13 @@ Git location: https://gitlab.com/TheInceptors/finmark/CodeLibrary.git
 
 #### Slicing columns 
 * H1_UsdChf_Reshaped01_pd = H1_UsdChf_pd.drop(H1_UsdChf_pd.columns[[0, -1]], axis=1)
+
+#### Resetting Index
+* # Reset the index
+* H1_UsdChf_Reshaped01_pd.reset_index()
+
+#### Dropping columns (index must start at zero)
+* dailyFullUsdChfD1_pd = dailyFullUsdChfD1_pd.drop(['na', 'Close'], axis=1)
+
+#### Display rows 
+* mask = H1FullUsdChf_pd[H1FullUsdChf_pd['Date'] == '2015.05.19']
