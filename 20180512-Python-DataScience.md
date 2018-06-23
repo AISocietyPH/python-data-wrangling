@@ -26,8 +26,12 @@ Git location: https://gitlab.com/TheInceptors/finmark/CodeLibrary.git
 * # Reset the index
 * H1_UsdChf_Reshaped01_pd.reset_index()
 
+#### Setting Index
+* df.set_index('month')
+
 #### Dropping columns (index must start at zero)
 * dailyFullUsdChfD1_pd = dailyFullUsdChfD1_pd.drop(['na', 'Close'], axis=1)
 
 #### Display rows 
 * mask = H1FullUsdChf_pd[H1FullUsdChf_pd['Date'] == '2015.05.19']
+
