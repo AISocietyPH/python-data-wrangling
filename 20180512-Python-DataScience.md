@@ -35,3 +35,8 @@ Git location: https://gitlab.com/TheInceptors/finmark/CodeLibrary.git
 #### Display rows 
 * mask = H1FullUsdChf_pd[H1FullUsdChf_pd['Date'] == '2015.05.19']
 
+#### Concatenate
+* T00x04UsdChf_pd = pd.concat([T0700UsdChf_pd, T0000UsdChf_pd], axis=1)
+
+#### Selecting Columns for max value between H08 and H09
+tableH0809 = SummaryTable06[['H08','H09']]
