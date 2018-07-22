@@ -40,3 +40,6 @@ Git location: https://gitlab.com/TheInceptors/finmark/CodeLibrary.git
 
 #### Selecting Columns for max value between H08 and H09
 tableH0809 = SummaryTable06[['H08','H09']]
+
+#### Picking Columns
+tableC07 = SummaryTable06[['C07']]
