@@ -43,3 +43,6 @@ tableH0809 = SummaryTable06[['H08','H09']]
 
 #### Picking Columns
 tableC07 = SummaryTable06[['C07']]
+
+#### Picking Similar Prefix Index
+Table_Horizontal_date.filter(regex='2015.01', axis=0)
