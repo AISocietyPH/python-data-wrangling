@@ -46,3 +46,6 @@ tableC07 = SummaryTable06[['C07']]
 
 #### Picking Similar Prefix Index
 Table_Horizontal_date.filter(regex='2015.01', axis=0)
+
+#### Picking Rows
+df.loc[df['column_name'] == 'some_value']
