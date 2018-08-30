@@ -49,3 +49,10 @@ Table_Horizontal_date.filter(regex='2015.01', axis=0)
 
 #### Picking Rows
 df.loc[df['column_name'] == 'some_value']
+
+#### Add Columns
+Table_CorePCE_Mdfd_pd ['Delta'] = 1
+
+#### Convert to numeric data
+Table_CorePCE_Mdfd_pd['Previous'] = Table_CorePCE_Mdfd_pd['Previous'].convert_objects(convert_numeric=True)
+
