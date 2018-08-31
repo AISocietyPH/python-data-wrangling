@@ -56,3 +56,14 @@ Table_CorePCE_Mdfd_pd ['Delta'] = 1
 #### Convert to numeric data
 Table_CorePCE_Mdfd_pd['Previous'] = Table_CorePCE_Mdfd_pd['Previous'].convert_objects(convert_numeric=True)
 
+#### Splitting Texts
+Table_CorePCE_Mdfd_pd ['Date'].str.split(expand=True)
+
+#### Replacing Texts within Dataframe
+formatColumnDate_pd.replace({',': ''}, regex=True)
+
+#### Rearranging Columns (Verify)
+df = df[['mean', 4,3,2,1]] 
+
+#### Combining Columns with Separator
+formatColumnDate_pd['fDate'] = formatColumnDate_pd['Column Name 0'].str.cat(formatColumnDate_pd[['Column Name 1', 'Column Name 2']], sep='.')
