@@ -67,3 +67,12 @@ df = df[['mean', 4,3,2,1]]
 
 #### Combining Columns with Separator
 formatColumnDate_pd['fDate'] = formatColumnDate_pd['Column Name 0'].str.cat(formatColumnDate_pd[['Column Name 1', 'Column Name 2']], sep='.')
+
+#### Regex for Removing $ Sign
+
+###### For removing $ Sign
+    *   TABLE_Trade_Balance_1_pd['fActual'] = TABLE_Trade_Balance_1_pd ['Actual'].replace({'\$':''}, regex = True)
+###### For Removing Alphabet Characters
+    *   TABLE_Trade_Balance_1_pd['fActual'] = TABLE_Trade_Balance_1_pd ['fActual'].replace({'B':''}, regex = True)
+###### For Removing Parenthesis Contained Characters
+TABLE_Trade_Balance_1_pd['Event'] = TABLE_Trade_Balance_1_pd['Event'].str.replace(r"\(.*\)","")
