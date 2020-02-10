@@ -1,4 +1,4 @@
-# PYTHON CODE SNIPPETS u
+# PYTHON CODE SNIPPETS
 #### Import csv as panda dataframe
     dailyFullUsdChfD1_pd = pd.read_csv('datasets/2018-05-02-UsdChfD1.csv')
 
