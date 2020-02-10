@@ -67,9 +67,9 @@
 
 #### Regex for Removing $ Sign
 
-###### For removing $ Sign
+##### For removing $ Sign
     TABLE_Trade_Balance_1_pd['fActual'] = TABLE_Trade_Balance_1_pd ['Actual'].replace({'\$':''}, regex = True)
-###### For Removing Alphabet Characters
+##### For Removing Alphabet Characters
     TABLE_Trade_Balance_1_pd['fActual'] = TABLE_Trade_Balance_1_pd ['fActual'].replace({'B':''}, regex = True)
-###### For Removing Parenthesis Contained Characters
+##### For Removing Parenthesis Contained Characters
     TABLE_Trade_Balance_1_pd['Event'] = TABLE_Trade_Balance_1_pd['Event'].str.replace(r"\(.*\)","")
