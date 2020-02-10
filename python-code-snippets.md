@@ -7,6 +7,10 @@
 
 #### Picking a column argument dataframe 
     mDataTime0400_pd = hourlyFullUsdChf_pd [(hourlyFullUsdChf_pd['Time'] == '04:00')]
+    
+#### Row Slice By Index
+    Data_pd.iloc[2:175]
+    Data_pd.iloc[:175]
 
 #### Numpy count results
     (BuyPosSubResult_np == 'Success').sum()
