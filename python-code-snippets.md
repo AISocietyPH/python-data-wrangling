@@ -83,3 +83,7 @@
     TABLE_Trade_Balance_1_pd['fActual'] = TABLE_Trade_Balance_1_pd ['fActual'].replace({'B':''}, regex = True)
 ##### For Removing Parenthesis Contained Characters
     TABLE_Trade_Balance_1_pd['Event'] = TABLE_Trade_Balance_1_pd['Event'].str.replace(r"\(.*\)","")
+
+#### Select Fraction Of Rows Randomly
+    # df.sample(frac = 0.5) 
+ 
