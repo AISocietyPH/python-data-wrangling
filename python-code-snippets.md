@@ -85,5 +85,8 @@
     TABLE_Trade_Balance_1_pd['Event'] = TABLE_Trade_Balance_1_pd['Event'].str.replace(r"\(.*\)","")
 
 #### Select Fraction Of Rows Randomly
-    # df.sample(frac = 0.5) 
+    df.sample(frac = 0.5) 
+
+#### Drop Data From Within 
+    dataset_train_pd = dataset_pd.drop(dataset_test_pd.index)
  
