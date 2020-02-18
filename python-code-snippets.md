@@ -89,4 +89,8 @@
 
 #### Drop Data From Within 
     dataset_train_pd = dataset_pd.drop(dataset_test_pd.index)
+    
+#### Pandas Dataframe To Numpy Array
+    dataset_test_features_np = dataset_test_features.to_numpy()
+    dataset_test_labels_np = dataset_test_labels.to_numpy()
  
